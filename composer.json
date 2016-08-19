@@ -1,0 +1,38 @@
+{
+    "name": "laravel-notification-channels/twitter",
+    "description": "Twitter Notifications Driver",
+    "homepage": "https://github.com/laravel-notification-channels/twitter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmed El.Hussaini",
+            "email": "aelhussaini@gmail.com",
+            "homepage": "http://twitter.com/sandboxws",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/notifications": "^5.3",
+        "illuminate/support": "^5.1|^5.2|^5.3",
+        "endroid/twitter": "1.2.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\Twitter\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\Twitter\\Test\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
