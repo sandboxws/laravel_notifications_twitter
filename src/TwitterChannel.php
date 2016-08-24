@@ -26,6 +26,10 @@ class TwitterChannel
         /** @var TwitterMessage $message */
         $message = $notification->toTwitter($notifiable);
 
+        if(is_string($message)) {
+            $message = TwitterMessage::create($message);
+        }
+
         if ($message->accessTokenNotGiven()) {
             throw CouldNotSendNotification::missingAccessToken();
         }
